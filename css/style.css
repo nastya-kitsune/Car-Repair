@@ -325,6 +325,11 @@ body {
         font-size: 34px;
     }
 }
+@media (max-width: 320px) {
+    .intro-title {
+        margin-top: 10px;
+    }
+}
 .intro-btn {
     display: flex;
     max-height: 40px;
@@ -347,18 +352,15 @@ body {
     .intro-btn {
         margin-top: 90px;
     }
-    @media (max-width: 450px) {
-        .intro-btn {
-            margin-top: 130px;
-        }
+}
+@media (max-width: 450px) {
+    .intro-btn {
+        margin-top: 130px;
     }
-    @media (max-width: 320px) {
-        .intro-btn {
-            margin-top: 20px;
-        }
-        .intro-title {
-            margin-top: 10px;
-        }
+}
+@media (max-width: 320px) {
+    .intro-btn {
+        margin-top: 20px;
     }
 }
 
@@ -1111,6 +1113,11 @@ body {
 @media (max-width: 767px) {
     .container--footer {
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 450px) {
+    .container--footer {
+        justify-content: center;
     }
 }
 .footer__logo img {
