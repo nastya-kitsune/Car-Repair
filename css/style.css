@@ -150,6 +150,8 @@ body {
     max-width: 20px;
 }
 .hours__text {
+    flex-direction: column;
+    display: flex;
     margin: 20px 30px 10px 15px;
 }
 .hours__text--title {
@@ -169,7 +171,12 @@ body {
     max-width: 20px;
 }
 .call__text {
+    display: flex;
+    flex-direction: column;
     margin: 20px 30px 10px 15px;
+}
+.call__text a {
+    color: inherit;
 }
 .coll__text--title {
     padding-bottom: 5px;
@@ -380,6 +387,7 @@ body {
     }
 }
 .small-title {
+    display: block;
     color: #4B4B4B;
     font-weight: 700;
     font-size: 12px;
@@ -463,6 +471,7 @@ body {
     letter-spacing: 0.15px;
     color: #4B4B4B;
     margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 
@@ -586,7 +595,14 @@ body {
 .container--services {
     max-width: 1070px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 100px 15px;
+}
+.big-title--services {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 117%;
+    color: #02133C;
+    margin-bottom: 60px;
 }
 .services__items {
     display: flex;
@@ -605,6 +621,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .services-text--title {
+    display: block;
     font-weight: 900;
     font-size: 19px;
     line-height: 137%;
@@ -647,6 +664,11 @@ body {
     padding-bottom: 76px;
     padding-left: 50px;
     padding-right: 50px;
+}
+@media (max-width: 450px) {
+    .form {
+        max-width: 300px;
+    }
 }
 .form__title {
     font-weight: 900;
@@ -693,6 +715,11 @@ body {
     .tell {
         min-width: 280px;
         display: flex;
+    }
+}
+@media (max-width: 450px) {
+    .tell {
+        min-width: 222px;
     }
 }
 .btn-submit {
@@ -749,6 +776,7 @@ body {
     padding-top: 15px;
 }
 .number {
+    display: block;
     font-size: 96px;
     font-weight: 900;
     font-style: normal;
@@ -782,7 +810,13 @@ body {
         top: -47px;
     }
 }
+@media (max-width: 320px) {
+    .k {
+        left: 115px;
+    }
+}
 .text {
+    display: block;
     font-size: 19px;
     font-weight: 900;
     line-height: 117%;
@@ -907,33 +941,29 @@ body {
 
 /* Section Customers*/
 
-.customers {
-    padding-bottom: 100px;
-}
 .customers__items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding-bottom: 250px;
 }
 .big-title.customers {
     max-width: 100%;
+    margin-right: 16px;
 }
 .customers__item--text {
     padding-bottom: 90px;
-    margin-right: 55px;
+    max-width: 33%;
 }
 .customers__item--comment {
     max-width: 285px;
-    max-height: 422px;
     background: white;
-    margin-right: 20px;
-    padding: 38px;
+    padding: 38px 38px 40px;
+    margin-right: 15px;
 }
 @media (max-width: 767px) {
     .customers__items {
         flex-wrap: wrap;
         padding-bottom: 80px;
-        justify-content: center;
     }
     .customers__item--text {
         padding-bottom: 0;
@@ -943,6 +973,12 @@ body {
     }
     .customers__item--comment {
         margin-top: 15px;
+    }
+}
+@media (max-width: 320px) {
+    .big-title.customers {
+        font-size: 20px;
+        margin-right:0;
     }
 }
 .comment-text {
@@ -988,6 +1024,7 @@ body {
     justify-content: space-between;
 }
 .impact-small {
+    display: block;
     color: #D5D5D5;
     font-weight: 700;
     font-size: 12px;
@@ -1014,6 +1051,12 @@ body {
 @media (max-width: 767px) {
     .impact-big {
         font-size: 24px;
+    }
+}
+@media (max-width: 320px) {
+    .impact-big {
+        max-width: 100%;
+        font-size: 20px;
     }
 }
 .impact__img img {
@@ -1068,11 +1111,12 @@ body {
 .sed {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: white;
     max-width: 1020px;
     margin: 0 auto;
     padding: 45px 86px;
-    margin-top: -66px;
+    margin-top: -72px;
 }
 .sed__left {
     font-style: normal;
@@ -1140,6 +1184,7 @@ body {
     padding: 8px;
 }
 .explore {
+    display: block;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1172,6 +1217,7 @@ body {
     padding: 8px 5px;
 }
 .contact {
+    display: block;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -1184,6 +1230,15 @@ body {
 .contact-link {
     display: flex;
     padding-bottom: 15px;
+}
+.contact-link a {
+    color: #4B4B4B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.15px;
+    padding-left: 10px;
 }
 .contact-link--text {
     font-style: normal;
